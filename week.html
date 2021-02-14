@@ -3,14 +3,38 @@
 <head>
     <title>HTML-schedule</title>
     <meta charset ="utf-8">
+  <style>
+       h1{
+          text-align:center;
+          border-bottom:2px solid gray;
+          margin:0;
+        }
+        #grid{
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          overflow:auto;
+        }
+        div{
+          border:2px solid gray;
+          padding:20px;
+        }
+        body{
+          margin:0;
+        }
+  </style>
 </head>
 <body>
-   <h1><a href="index.html">목록</a></h1>
+  <h1><a href="index.html">Calendar</a><h1>
+  <div id="grid">
+   <div>
+    <h2>목록</h2>
     <ul>
         <li><a href="today.html">오늘 할 일</a></li>
         <li><a href="week.html">주간 할 일</a></li>
         <li><a href="month.html">월간 할 일</a></li>
     </ul>
+   </div>
+   <div>
     <h2>2월 2째 주</h2>
     <ul>
         <li><strong>설연휴</strong></li>
@@ -18,5 +42,7 @@
         <li>약 1.5일 먹기</li>
         <li>다음주 화요일 성욱이 약속</li>
     </ul>
+   </div>
+  </div>
 </body>
 </html>
